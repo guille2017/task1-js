@@ -567,10 +567,10 @@
   .card-body{
     flex-direction: row;
   }
-  /********************media@ para celular*******************************/
+  /********************media@ para celular y tablet*******************************/
   @media only screen and (min-width: 320px) and (max-width: 767px){
   
-  /* el @media se realizara para dispositivos mobiles modificaciones en menu, imagenes,card*/
+  /* el @media se realizara para dispositivos mobiles y tablets modificaciones en menu, imagenes,card*/
   /* se realizo el home.html en media@** falta hacer los 5 enlaces restantes de la pagina web*/
   .logo img {
     position: relative;
@@ -755,6 +755,9 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+/************upcomingevents******************************************/
+
+
 }
   /********************media@ para table*********************************/
   
@@ -770,6 +773,8 @@ h2 {
   
   
   @media only screen and (min-width: 768px) and (max-width: 1023px){
-  /* el @media se realizara para los dispositos de escritorio modificacion en  menu, imagenes, card.*/
+  /* el @media se realizara para los dispositos de tablets y pc escritorio modificacion en  menu, imagenes, card.*/
   
+
+
   }
