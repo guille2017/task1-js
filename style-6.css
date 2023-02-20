@@ -568,14 +568,30 @@
     flex-direction: row;
   }
   /********************media@ para celular y tablet*******************************/
-  @media only screen and (min-width: 320px) and (max-width: 767px){
-  
-  /* el @media se realizara para dispositivos mobiles y tablets modificaciones en menu, imagenes,card*/
+
+/* el @media se realizara para dispositivos mobiles y tablets modificaciones en menu, imagenes,card*/
   /* se realizo el home.html en media@** falta hacer los 5 enlaces restantes de la pagina web*/
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    a {
+      /* padding: 10px 10px; */
+      text-decoration: none;
+      color: #fcecec;
+      padding: 1px 5px 1px 31px;
+      box-shadow: 2px 2px blueviolet;
+      background-color: black;
+      border: 1px solid rgb(240, 4, 90);
+      border-radius: 10px;
+      position: relative;
+      margin-inline: 0px 0px;
+      margin-block: 0px 0px;
+      display: inline-block;
+      
+  }
+  
   .logo img {
     position: relative;
     left: 10px;
-    width: 150px;
+    width: 100px;
     display: flex;
     margin-right: auto;
     flex-direction: column;
@@ -588,7 +604,7 @@ img, svg {
 .header {
   background-color: darkgray;
   height: 100px;
-  width: 600px;
+  width: 320px;
   margin: 0px auto;
   /*display: flex;*/
   /*justify-content: center;*/
@@ -610,10 +626,26 @@ img, svg {
   margin-bottom: 10px;
   margin-left: auto;
 }
-.caja_1 {
+.contenedor {
+  width: 320px;
+  height: 767px;
+  border: black 0px dashed;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*.caja_1 {
   background-color: rgb(213, 213, 218);
   width: 601px;
   height: 200px;
+  flex-direction: row;
+}*/
+.caja_1 {
+  background-color: rgb(213, 213, 218);
+  width: 320px;
+  height: 150px;
   flex-direction: row;
 }
 
@@ -621,6 +653,7 @@ img, svg {
   width: 50px;
 margin: 0px 10px;
 }
+/*
 .footer h2 {
   position: relative;
   align-items: center;
@@ -629,30 +662,37 @@ margin: 0px 10px;
   bottom: -0px;
   left: 400px;
   display: flex;
-  /* justify-content: center; */
-}
+  /* justify-content: center; 
+}*/
 .caja_1 img {
   /*width: 1200px;*/
   height: 200px;
   background-color: #9867f8;
 }
+/*
 .caja_1 img {
   width: 50%;
   height: 200px;
   background-color: #9867f8;
 }
+*/
 
+.caja_1 img {
+  width: 50%;
+  height: 150px;
+  background-color: #9867f8;
+}
 .w-100 {
-  width: 50%!important;
+  width: 30%!important;
 }
 .d-block {
-  display: block!important;
+ display: block!important;
 }
 .carousel-item {
   position: relative;
   /*display: none;*/
   float: left;
-  width: 50%;
+  width: 20%;
   margin-right: -50%;
   /*-webkit-backface-visibility: hidden;*/
   backface-visibility: hidden;
@@ -663,12 +703,30 @@ img, svg {
 }
 .caja_2 {
   background-color: rgb(102, 255, 0);
+  width: 320px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+/*.caja_2 {
+  background-color: rgb(102, 255, 0);
   width: 600px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: initial;
   flex: none;
+}*/
+
+.caja_2 .formulario {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
 }
 button, input, optgroup, select, textarea {
   margin: 0;
@@ -680,7 +738,7 @@ input, label {
   margin: 0.4rem 0;
   width: 90px;
 }
-input[type="checkbox" i] {
+/*input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   appearance: auto;
@@ -688,10 +746,24 @@ input[type="checkbox" i] {
   margin: 3px 3px 3px 4px;
   padding: initial;
   border: initial;
+}*/
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 1px 1px 1px 1px;
+  padding: initial;
+  border: initial;
 }
-label, textarea {
+
+/*label, textarea {
   font-size: 1.1rem;
   letter-spacing: 1px;
+}*/
+label, textarea {
+  font-size: 0.4rem;
+  letter-spacing: 1.2px;
 }
 label {
   display: block;
@@ -703,11 +775,51 @@ button, input, optgroup, select, textarea {
   font-size: inherit;
   line-height: inherit;
 }
+/*
 input, label {
   margin: 0.4rem 0;
   width: 90px;
+}*/
+input, label {
+  margin: 0.4rem 0;
+  width: 40px;
 }
-
+image{
+  width: 20px;
+  height: 20px;
+  color: #1ff50c;
+}
+.caja_3 {
+  background-color: rgb(102, 255, 0);
+  width: 320px;
+  height: 517px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-content: revert;
+  flex-direction: row;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+div.card{
+  width: 9rem;
+    height: 9rem;
+}
+/*
+.caja_3 {
+  background-color: rgb(102, 255, 0);
+  width: 320px;
+  height: 517px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-content: revert;
+  flex-direction: row;
+  flex-direction: column;
+}*/
+/*
 .caja_3 {
   background-color: rgb(102, 255, 0);
   width: 601px;
@@ -719,20 +831,20 @@ input, label {
   align-content: center;
   flex-direction: row;
   flex-direction: column;
-}
-.footer {
+}*/
+/*.footer {
   background-color: darkgray;
   height: 100px;
   width: 600px;
-  /* margin: 0px auto; */
+   margin: 0px auto; 
   display: flex;
   align-items: center;
   justify-content: normal;
-}
+}*//*
 .footer img {
   width: 50px;
-  /* margin: 0px 40px; */
-}
+  /* margin: 0px 40px; 
+}*/
 img, svg {
   vertical-align: middle;
 }
@@ -755,18 +867,257 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-/************upcomingevents******************************************/
 
-
+/**********************************medi@******************************/
+.header {
+  background-color: darkgray;
+  height: 100px;
+  width: 320px;
+  margin: 0px auto;
+  /* display: flex; */
+  /* justify-content: center; */
+  display: table;
 }
+.logo img {
+  position: relative;
+  left: 10px;
+  width: 100px;
+  display: flex;
+  margin-right: auto;
+  flex-direction: column;
+  align-self: center;
+}
+a {
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+  /* text-decoration: underline; */
+}
+a {
+  /* padding: 10px 10px; */
+  text-decoration: none;
+  color: #fcecec;
+  padding: 1px 5px 1px 31px;
+  box-shadow: 2px 2px blueviolet;
+  background-color: black;
+  border: 1px solid rgb(240, 4, 90);
+  border-radius: 10px;
+  position: relative;
+  margin-inline: 0px 0px;
+  margin-block: 0px 0px;
+  display: inline-block;
+}
+.caja_1 img {
+  width: 50%;
+  height: 150px;
+  background-color: #9867f8;
+}
+.caja_2 {
+  background-color: rgb(102, 255, 0);
+  width: 320px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.caja_2 .formulario {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+
+.contenedor {
+  width: 320px;
+  height: 767px;
+  border: black 0px dashed;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.card{
+  width: 10rem;
+  height: 12rem;
+}
+.caja_3 .card {
+  position: relative;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  flex-wrap: wrap;
+}
+
+.card-img-top{
+  height:"70";
+  width:"40";
+}
+.card-title {
+  position: relative;
+  left: 20px;
+}
+.h5, h5 {
+  font-size: 1.0rem;
+}
+.card-text {
+  position: relative;
+  left: 20px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.footer {
+  background-color: darkgray;
+  height: 100px;
+  width: 320px;
+  /* margin: 0px auto; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: normal;
+}
+.footer {
+  background-color: darkgray;
+  height: 100px;
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.footer img {
+  width: 25px;
+  margin: 0px 10px;
+}
+.footer h2 {
+  position: relative;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  bottom: -0px;
+  left: 220px;
+  display: flex;
+  /* justify-content: center; */
+}
+.card-title {
+  position: relative;
+  left: 10px;
+}
+.btn {
+  position: relative;
+  display: flex;
+  left: 70px;
+}
+.footer {
+  background-color: darkgray;
+  height: 100px;
+  width: 320px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.btn {
+  --bs-btn-padding-x: 0.05rem;
+  --bs-btn-padding-y: 0.075rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #212529;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.precio-text {
+  position: relative;
+  bottom: 5px;
+  left: -10px;
+}
+.h5, h5 {
+  font-size: 1.01rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  /* margin-top: 0; */
+  /* margin-bottom: .5rem; */
+  /* font-weight: 500; */
+  /* line-height: 1.2; */
+  color: var(--bs-heading-color,inherit);
+}
+.btn {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.075rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #212529;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+}
+
+/************upcomingevents******************************************/
   /********************media@ para table*********************************/
   
   
   
-  @media only screen and (min-width: 577px) and (max-width: 767px){
-  /* el @media se realizara para dispositivos tables modificaciones en menu, imagenes,card*/
+ /* @media only screen and (min-width: 577px) and (max-width: 767px){
+  /* el @media se realizara para dispositivos tables modificaciones en menu, imagenes,card
   
-  }
+  }*/
   
   
   /********************media@ para pc*********************************/
@@ -775,6 +1126,7 @@ h2 {
   @media only screen and (min-width: 768px) and (max-width: 1023px){
   /* el @media se realizara para los dispositos de tablets y pc escritorio modificacion en  menu, imagenes, card.*/
   
+
 
 
   }
